@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px 20px;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  padding: 80px 20px 20px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+/* Theme Styles */
+.theme1 {
+  background-color: #f9f9f9;
+  color: #333;
+  font-family: sans-serif;
+}
+
+.theme2 {
+  background-color: #1e1e1e;
+  color: #eee;
+  font-family: serif;
+}
+
+.theme3 {
+  background-color: #ffefd5;
+  color: #8b0000;
+  font-family: "Pacifico", cursive;
+}
+
+/* Animations */
+body {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
